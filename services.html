@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#0a0907" />
+<meta name="theme-color" content="#000000" />
 <title>Services — The Maintenance Company, Nashville TN</title>
-<meta name="description" content="Home maintenance, additions and renovations in Nashville, TN. Seasonal upkeep, bi-monthly inspections, whole-house renovations, kitchen and bath remodels, and more." />
+<meta name="description" content="Offering a wide range of home maintenance, additions and renovations in Nashville, TN. Seasonal upkeep, bi-monthly inspections, whole-house renovations, kitchen and bath remodels." />
 <link rel="icon" type="image/png" href="images/logo-165w.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,35 +19,33 @@
 <header class="site-header">
   <nav class="nav" aria-label="Primary">
     <a href="index.html" class="nav-logo" aria-label="The Maintenance Company — Home">
-      <img src="images/logo-165w.png" alt="" width="120" height="40" />
-      <span class="nav-logo-text">The Maintenance Company</span>
+      <img src="images/logo-165w.png" alt="The Maintenance Company" />
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="is-active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <ul class="nav-links nav-cta">
+      <li><a href="contact.html" class="btn">Contact us</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
       <span class="nav-toggle-bar"></span>
     </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html" class="is-active">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="nav-cta"><a href="contact.html" class="btn">Get in touch</a></li>
-    </ul>
   </nav>
+  <ul class="nav-links" id="nav-mobile">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html" class="is-active">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="nav-cta-mobile"><a href="contact.html">Contact us</a></li>
+  </ul>
 </header>
 
 <main id="main">
 
-  <section class="page-intro">
-    <div class="container reveal">
-      <span class="crumb">Services</span>
-      <h1>Home maintenance and<br />construction in <em>Nashville.</em></h1>
-      <p class="lead">Offering a wide range of dependable home care — from seasonal upkeep to full renovations.</p>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <section>
+  <section style="padding-top: calc(var(--header-h) + var(--header-gap) + 64px);">
     <div class="container">
 
       <article class="service-detail reveal">
@@ -56,14 +54,14 @@
             <source type="image/webp" srcset="images/IMG_4067-480w.webp 480w, images/IMG_4067-800w.webp 800w, images/IMG_4067-1400w.webp 1400w" sizes="(max-width: 920px) 100vw, 55vw">
             <img loading="lazy" src="images/IMG_4067-800w.jpg" alt="Seasonal home maintenance work" />
           </picture>
-          <span class="img-caption">Seasonal care</span>
+          <span class="img-caption">Maintenance</span>
         </div>
         <div class="service-detail-content">
-          <span class="section-eyebrow">01 — Maintenance</span>
-          <h2>A wide range of <em>home maintenance.</em></h2>
-          <p>We care for the systems that keep your home running — proactively, on a schedule that fits the way you live. From seasonal walk-throughs to bi-monthly inspections, our team keeps small issues from becoming big ones.</p>
+          <span class="section-eyebrow">Maintenance Services</span>
+          <h2>Offering a wide range of <em>home maintenance.</em></h2>
+          <p>Home service plans can be modified but typically include the following scheduled services.</p>
 
-          <p class="service-sub-heading">Seasonal (Spring &amp; Fall)</p>
+          <p class="service-sub-heading">Seasonal — Spring and Fall includes</p>
           <div class="service-list-grid">
             <ul class="service-list">
               <li>Coordinate winterizations of plumbing</li>
@@ -77,7 +75,7 @@
             </ul>
           </div>
 
-          <p class="service-sub-heading">Bi-monthly inspection items</p>
+          <p class="service-sub-heading">Bi-monthly maintenance includes, but not limited to inspection of</p>
           <div class="service-list-grid">
             <ul class="service-list">
               <li>Sump pumps</li>
@@ -88,10 +86,10 @@
             </ul>
             <ul class="service-list">
               <li>Elevator</li>
-              <li>Crawl space &amp; attic</li>
-              <li>Light bulbs — as needed</li>
-              <li>Air filters — as needed</li>
-              <li>Exterior / pressure washing</li>
+              <li>Crawl space and attic</li>
+              <li>Light bulbs – replace as needed</li>
+              <li>Air filters – replace as needed</li>
+              <li>Exterior cleaning / pressure washing</li>
             </ul>
           </div>
         </div>
@@ -101,21 +99,20 @@
         <div class="service-detail-media">
           <picture>
             <source type="image/webp" srcset="images/IMG_4085-480w.webp 480w, images/IMG_4085-800w.webp 800w, images/IMG_4085-1400w.webp 1400w" sizes="(max-width: 920px) 100vw, 55vw">
-            <img loading="lazy" src="images/IMG_4085-800w.jpg" alt="Renovation and remodeling project" />
+            <img loading="lazy" src="images/IMG_4085-800w.jpg" alt="Home addition and renovation project" />
           </picture>
-          <span class="img-caption">Remodeling</span>
+          <span class="img-caption">Additions</span>
         </div>
         <div class="service-detail-content">
-          <span class="section-eyebrow">02 — Remodeling</span>
-          <h2>Additions and renovations, <em>beautifully done.</em></h2>
-          <p>We design, coordinate and build the next chapter of your home — bringing the same care to construction that we give to maintenance.</p>
+          <span class="section-eyebrow">Home Additions</span>
+          <h2>Adding to the <em>beauty of your home.</em></h2>
+          <p>The Maintenance Company has worked with many home owners to help them create a welcome addition to add to the beauty of their home, offering full service construction. Some of these additions have consisted of:</p>
 
-          <p class="service-sub-heading">Home additions</p>
           <div class="service-list-grid">
             <ul class="service-list">
-              <li>Bedrooms, offices, baths</li>
+              <li>Bedrooms, home offices, bathrooms, etc.</li>
               <li>Guest house</li>
-              <li>Second-story expansions</li>
+              <li>Second story expansions</li>
             </ul>
             <ul class="service-list">
               <li>Pool &amp; spa</li>
@@ -123,20 +120,34 @@
               <li>Additional garages</li>
             </ul>
           </div>
+        </div>
+      </article>
 
-          <p class="service-sub-heading">Renovation services</p>
+      <article class="service-detail reveal">
+        <div class="service-detail-media">
+          <picture>
+            <source type="image/webp" srcset="images/IMG_5004-480w.webp 480w, images/IMG_5004-800w.webp 800w, images/IMG_5004-1400w.webp 1400w" sizes="(max-width: 920px) 100vw, 55vw">
+            <img loading="lazy" src="images/IMG_5004-800w.jpg" alt="Renovation work with custom carpentry" />
+          </picture>
+          <span class="img-caption">Renovations</span>
+        </div>
+        <div class="service-detail-content">
+          <span class="section-eyebrow">Renovations</span>
+          <h2>From a single bathroom <em>to a whole house.</em></h2>
+          <p>Remodeling projects come in many forms and sizes. The Maintenance Company can help with all of your projects whether you are renovating your entire home or simply remodeling a bathroom. Some of the renovations we can help you with include:</p>
+
           <div class="service-list-grid">
             <ul class="service-list">
-              <li>Whole-house renovation</li>
-              <li>Kitchen &amp; bathroom</li>
+              <li>Whole house renovation</li>
+              <li>Kitchen &amp; bathroom renovation</li>
               <li>Roof repair &amp; replacement</li>
-              <li>Windows &amp; doors</li>
+              <li>Upgrade windows &amp; doors</li>
             </ul>
             <ul class="service-list">
-              <li>Air quality &amp; HVAC</li>
-              <li>Site drainage &amp; water</li>
-              <li>Attic build-outs</li>
-              <li>Driveways &amp; hardscapes</li>
+              <li>Upgrade air quality &amp; HVAC systems</li>
+              <li>Site drainage and water remediation</li>
+              <li>Attic build outs</li>
+              <li>Site work: driveways, hardscapes, etc.</li>
             </ul>
           </div>
         </div>
@@ -159,47 +170,71 @@
         </div>
       </div>
 
-      <div class="project-grid">
-        <figure class="p-tile p-1 reveal" data-full="images/IMG_0373-1400w.jpg">
+      <div class="gallery-v3 gallery-projects">
+        <figure class="gv-tile gv-1 reveal" data-full="images/IMG_0373-1400w.jpg">
           <picture>
-            <source type="image/webp" srcset="images/IMG_0373-480w.webp 480w, images/IMG_0373-800w.webp 800w, images/IMG_0373-1400w.webp 1400w" sizes="(max-width: 980px) 100vw, 66vw">
+            <source type="image/webp" srcset="images/IMG_0373-480w.webp 480w, images/IMG_0373-800w.webp 800w, images/IMG_0373-1400w.webp 1400w" sizes="100vw">
             <img loading="lazy" src="images/IMG_0373-800w.jpg" alt="Construction detail" />
           </picture>
         </figure>
-        <figure class="p-tile p-2 reveal" data-full="images/Interior-6-864w.jpg">
+        <figure class="gv-tile gv-2 reveal" data-full="images/Interior-6-864w.jpg">
           <picture>
             <source type="image/webp" srcset="images/Interior-6-864w.webp">
             <img loading="lazy" src="images/Interior-6-864w.jpg" alt="Interior finish work" />
           </picture>
         </figure>
-        <figure class="p-tile p-3 reveal" data-full="images/Exterior-111-864w.jpg">
-          <picture>
-            <source type="image/webp" srcset="images/Exterior-111-864w.webp">
-            <img loading="lazy" src="images/Exterior-111-864w.jpg" alt="Exterior project" />
-          </picture>
-        </figure>
-        <figure class="p-tile p-4 reveal" data-full="images/IMG_0850-1400w.jpg">
-          <picture>
-            <source type="image/webp" srcset="images/IMG_0850-480w.webp 480w, images/IMG_0850-800w.webp 800w" sizes="(max-width: 980px) 50vw, 33vw">
-            <img loading="lazy" src="images/IMG_0850-800w.jpg" alt="Renovated structure" />
-          </picture>
-        </figure>
-        <figure class="p-tile p-5 reveal" data-full="images/Interior-7-864w.jpg">
+        <figure class="gv-tile gv-3 reveal" data-full="images/Interior-7-864w.jpg">
           <picture>
             <source type="image/webp" srcset="images/Interior-7-864w.webp">
             <img loading="lazy" src="images/Interior-7-864w.jpg" alt="Interior detail" />
           </picture>
         </figure>
-        <figure class="p-tile p-6 reveal" data-full="images/IMG_0423-1400w.jpg">
+        <figure class="gv-tile gv-4 reveal" data-full="images/Exterior-111-864w.jpg">
           <picture>
-            <source type="image/webp" srcset="images/IMG_0423-480w.webp 480w, images/IMG_0423-800w.webp 800w" sizes="(max-width: 980px) 100vw, 50vw">
-            <img loading="lazy" src="images/IMG_0423-800w.jpg" alt="Renovation in progress" />
+            <source type="image/webp" srcset="images/Exterior-111-864w.webp">
+            <img loading="lazy" src="images/Exterior-111-864w.jpg" alt="Exterior project" />
           </picture>
         </figure>
-        <figure class="p-tile p-7 reveal" data-full="images/Exterior-8-864w.jpg">
+        <figure class="gv-tile gv-5 reveal" data-full="images/IMG_0415-1400w.jpg">
+          <picture>
+            <source type="image/webp" srcset="images/IMG_0415-480w.webp 480w, images/IMG_0415-800w.webp 800w, images/IMG_0415-1400w.webp 1400w" sizes="(max-width: 980px) 50vw, 55vw">
+            <img loading="lazy" src="images/IMG_0415-800w.jpg" alt="Renovation in progress" />
+          </picture>
+        </figure>
+        <figure class="gv-tile gv-6 reveal" data-full="images/Exterior-31-864w.jpg">
+          <picture>
+            <source type="image/webp" srcset="images/Exterior-31-864w.webp">
+            <img loading="lazy" src="images/Exterior-31-864w.jpg" alt="Exterior remodel" />
+          </picture>
+        </figure>
+        <figure class="gv-tile gv-7 reveal" data-full="images/IMG_0423-1400w.jpg">
+          <picture>
+            <source type="image/webp" srcset="images/IMG_0423-480w.webp 480w, images/IMG_0423-800w.webp 800w, images/IMG_0423-1400w.webp 1400w" sizes="(max-width: 980px) 50vw, 33vw">
+            <img loading="lazy" src="images/IMG_0423-800w.jpg" alt="Renovation project" />
+          </picture>
+        </figure>
+        <figure class="gv-tile gv-8 reveal" data-full="images/IMG_4996-1400w.jpg">
+          <picture>
+            <source type="image/webp" srcset="images/IMG_4996-480w.webp 480w, images/IMG_4996-800w.webp 800w, images/IMG_4996-1400w.webp 1400w" sizes="(max-width: 980px) 50vw, 33vw">
+            <img loading="lazy" src="images/IMG_4996-800w.jpg" alt="Outdoor structure" />
+          </picture>
+        </figure>
+        <figure class="gv-tile gv-9 reveal" data-full="images/Exterior-8-864w.jpg">
           <picture>
             <source type="image/webp" srcset="images/Exterior-8-864w.webp">
             <img loading="lazy" src="images/Exterior-8-864w.jpg" alt="Outdoor project" />
+          </picture>
+        </figure>
+        <figure class="gv-tile gv-10 reveal" data-full="images/Exterior-10-478w.jpg">
+          <picture>
+            <source type="image/webp" srcset="images/Exterior-10-478w.webp">
+            <img loading="lazy" src="images/Exterior-10-478w.jpg" alt="Exterior architectural shot" />
+          </picture>
+        </figure>
+        <figure class="gv-tile gv-11 reveal" data-full="images/IMG_0948-1400w.jpg">
+          <picture>
+            <source type="image/webp" srcset="images/IMG_0948-480w.webp 480w, images/IMG_0948-800w.webp 800w, images/IMG_0948-1400w.webp 1400w" sizes="(max-width: 980px) 100vw, 55vw">
+            <img loading="lazy" src="images/IMG_0948-800w.jpg" alt="Site work and finishes" />
           </picture>
         </figure>
       </div>
@@ -211,7 +246,7 @@
       <div class="cta-strip-inner reveal">
         <h2>Have a project <em>in mind?</em></h2>
         <p>Tell us about your home and what you'd like to take care of. We'll plan the next step together.</p>
-        <a href="contact.html" class="btn cta-btn">Request a consultation <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="contact.html" class="btn cta-btn">Contact us <span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -222,9 +257,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo">
-          <img src="images/logo-165w.png" alt="" width="120" height="40" />
-        </a>
+        <p class="footer-brand-name">The Maintenance Company</p>
         <p>A team of dependable home maintenance professionals based in Nashville, Tennessee — caring for homes since 2000.</p>
       </div>
       <div>
@@ -233,15 +266,15 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
       </div>
       <div>
         <h4 class="footer-heading">Hours</h4>
         <ul class="footer-list">
-          <li><span>Mon – Fri</span></li>
+          <li><span>Monday – Friday</span></li>
           <li><span>8:00 AM – 4:30 PM</span></li>
-          <li><span>24/7 emergency calls</span></li>
+          <li><span>24/7 urgent calls</span></li>
         </ul>
       </div>
       <div>
@@ -258,7 +291,6 @@
       <span>Caring for Nashville homes.</span>
     </div>
   </div>
-  <p class="footer-wordmark" aria-hidden="true">tmc</p>
 </footer>
 
 <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">

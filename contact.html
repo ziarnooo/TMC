@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#0a0907" />
+<meta name="theme-color" content="#000000" />
 <title>Contact — The Maintenance Company, Nashville TN</title>
 <meta name="description" content="Get in touch with The Maintenance Company in Nashville, Tennessee. Call (615) 460-7540 or send us a note about your home." />
 <link rel="icon" type="image/png" href="images/logo-165w.png" />
@@ -19,36 +19,40 @@
 <header class="site-header">
   <nav class="nav" aria-label="Primary">
     <a href="index.html" class="nav-logo" aria-label="The Maintenance Company — Home">
-      <img src="images/logo-165w.png" alt="" width="120" height="40" />
-      <span class="nav-logo-text">The Maintenance Company</span>
+      <img src="images/logo-165w.png" alt="The Maintenance Company" />
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <ul class="nav-links nav-cta">
+      <li><a href="contact.html" class="btn">Contact us</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
       <span class="nav-toggle-bar"></span>
     </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="is-active">Contact</a></li>
-      <li class="nav-cta"><a href="contact.html" class="btn">Get in touch</a></li>
-    </ul>
   </nav>
+  <ul class="nav-links" id="nav-mobile">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="nav-cta-mobile"><a href="contact.html">Contact us</a></li>
+  </ul>
 </header>
 
 <main id="main">
 
-  <section class="page-intro">
-    <div class="container reveal">
-      <span class="crumb">Contact</span>
-      <h1>Let's talk about <em>your home.</em></h1>
-      <p class="lead">Send us a note, give us a call, or write us directly. We respond to inquiries Monday through Friday.</p>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <section>
+  <section style="padding-top: calc(var(--header-h) + var(--header-gap) + 72px);">
     <div class="container">
+
+      <header class="reveal" style="max-width: 880px; margin-bottom: clamp(48px, 7vw, 72px);">
+        <span class="section-eyebrow">Contact</span>
+        <h1 style="margin-bottom: 0;">Let's talk about <em>your home.</em></h1>
+      </header>
+
       <div class="contact-grid">
 
         <div class="contact-card reveal">
@@ -144,9 +148,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo">
-          <img src="images/logo-165w.png" alt="" width="120" height="40" />
-        </a>
+        <p class="footer-brand-name">The Maintenance Company</p>
         <p>A team of dependable home maintenance professionals based in Nashville, Tennessee — caring for homes since 2000.</p>
       </div>
       <div>
@@ -155,15 +157,15 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
       </div>
       <div>
         <h4 class="footer-heading">Hours</h4>
         <ul class="footer-list">
-          <li><span>Mon – Fri</span></li>
+          <li><span>Monday – Friday</span></li>
           <li><span>8:00 AM – 4:30 PM</span></li>
-          <li><span>24/7 emergency calls</span></li>
+          <li><span>24/7 urgent calls</span></li>
         </ul>
       </div>
       <div>
@@ -180,7 +182,6 @@
       <span>Caring for Nashville homes.</span>
     </div>
   </div>
-  <p class="footer-wordmark" aria-hidden="true">tmc</p>
 </footer>
 
 <script src="js/main.js" defer></script>
