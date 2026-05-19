@@ -29,26 +29,27 @@
       </ul>
     </div>
     <ul class="nav-links nav-cta">
-      <li><a href="contact.html" class="btn">Contact us</a></li>
+      <li><a href="contact.html" class="btn btn-ghost">Contact us</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
       <span class="nav-toggle-bar"></span>
     </button>
   </nav>
-  <ul class="nav-links" id="nav-mobile">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html" class="is-active">Services</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="nav-cta-mobile"><a href="contact.html">Contact us</a></li>
-  </ul>
 </header>
+
+<ul id="nav-mobile">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="services.html" class="is-active">Services</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="nav-cta-mobile"><a href="contact.html">Contact us</a></li>
+</ul>
 
 <main id="main">
 
   <section style="padding-top: calc(var(--header-h) + var(--header-gap) + 64px);">
     <div class="container">
 
-      <article class="service-detail reveal">
+      <article class="service-detail reveal" id="maintenance">
         <div class="service-detail-media">
           <picture>
             <source type="image/webp" srcset="images/IMG_4067-480w.webp 480w, images/IMG_4067-800w.webp 800w, images/IMG_4067-1400w.webp 1400w" sizes="(max-width: 920px) 100vw, 55vw">
@@ -95,7 +96,7 @@
         </div>
       </article>
 
-      <article class="service-detail reverse reveal">
+      <article class="service-detail reverse reveal" id="additions">
         <div class="service-detail-media">
           <picture>
             <source type="image/webp" srcset="images/IMG_4085-480w.webp 480w, images/IMG_4085-800w.webp 800w, images/IMG_4085-1400w.webp 1400w" sizes="(max-width: 920px) 100vw, 55vw">
@@ -123,7 +124,7 @@
         </div>
       </article>
 
-      <article class="service-detail reveal">
+      <article class="service-detail reveal" id="renovations">
         <div class="service-detail-media">
           <picture>
             <source type="image/webp" srcset="images/IMG_5004-480w.webp 480w, images/IMG_5004-800w.webp 800w, images/IMG_5004-1400w.webp 1400w" sizes="(max-width: 920px) 100vw, 55vw">
@@ -156,21 +157,13 @@
     </div>
   </section>
 
-  <hr class="divider" />
+  <section class="bento-section has-head">
+    <div class="container">
+      <header class="reveal bento-head">
+        <h2>A sample of our <em>recent projects.</em></h2>
+      </header>
 
-  <section>
-    <div class="container-wide">
-      <div class="section-head-split reveal">
-        <div class="eyebrow-col">
-          <span class="section-eyebrow">Recent work</span>
-        </div>
-        <div>
-          <h2>A sample of our <em>recent projects.</em></h2>
-          <p class="lead">Maintenance and remodeling work completed across the Nashville area.</p>
-        </div>
-      </div>
-
-      <div class="gallery-v3 gallery-projects">
+      <div class="gallery-v3 gallery-projects gallery-bento">
         <figure class="gv-tile gv-1 reveal" data-full="images/IMG_0373-1400w.jpg">
           <picture>
             <source type="image/webp" srcset="images/IMG_0373-480w.webp 480w, images/IMG_0373-800w.webp 800w, images/IMG_0373-1400w.webp 1400w" sizes="100vw">

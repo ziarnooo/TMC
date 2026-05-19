@@ -33,19 +33,20 @@
       </ul>
     </div>
     <ul class="nav-links nav-cta">
-      <li><a href="contact.html" class="btn">Contact us</a></li>
+      <li><a href="contact.html" class="btn btn-ghost">Contact us</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
       <span class="nav-toggle-bar"></span>
     </button>
   </nav>
-  <ul class="nav-links" id="nav-mobile">
-    <li><a href="index.html" class="is-active">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="nav-cta-mobile"><a href="contact.html">Contact us</a></li>
-  </ul>
 </header>
+
+<ul id="nav-mobile">
+  <li><a href="index.html" class="is-active">Home</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="nav-cta-mobile"><a href="contact.html">Contact us</a></li>
+</ul>
 
 <main id="main">
 
@@ -80,34 +81,38 @@
       </div>
 
       <div class="services-overview">
-        <article class="service-item reveal">
+        <a class="service-item reveal" href="services.html#maintenance">
           <span class="service-num">01</span>
           <div>
             <h3>Home inspections</h3>
             <p>Visually inspect exterior and interior of home, including roof and crawl space, and generate written report on any needed repairs or replacements.</p>
           </div>
-        </article>
-        <article class="service-item reveal">
+          <span class="service-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="service-item reveal" href="services.html#maintenance">
           <span class="service-num">02</span>
           <div>
             <h3>24/7 urgent calls</h3>
             <p>Availability 7/24 for urgent calls, overtime rates apply. Our normal working hours are from 8:00 AM to 4:30 PM.</p>
           </div>
-        </article>
-        <article class="service-item reveal">
+          <span class="service-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="service-item reveal" href="services.html#additions">
           <span class="service-num">03</span>
           <div>
             <h3>Contractor coordination</h3>
             <p>Coordinate, schedule and follow up of all work performed by 3rd party contractors and vendors contacted by The Maintenance Company.</p>
           </div>
-        </article>
-        <article class="service-item reveal">
+          <span class="service-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="service-item reveal" href="services.html#maintenance">
           <span class="service-num">04</span>
           <div>
             <h3>Maintenance records</h3>
             <p>Maintain records on structure, systems and appliances, including information on repairs or replacements.</p>
           </div>
-        </article>
+          <span class="service-item-arrow" aria-hidden="true">→</span>
+        </a>
       </div>
 
       <div style="text-align:center; margin-top:56px;" class="reveal">
@@ -116,19 +121,9 @@
     </div>
   </section>
 
-  <section>
-    <div class="container-wide">
-      <div class="section-head-split reveal">
-        <div class="eyebrow-col">
-          <span class="section-eyebrow">Selected work</span>
-        </div>
-        <div>
-          <h2>Projects across <em>Nashville.</em></h2>
-          <p class="lead">A glimpse at the homes, additions and renovations we've helped care for and bring to life.</p>
-        </div>
-      </div>
-
-      <div class="gallery-v3 gallery-home">
+  <section class="bento-section">
+    <div class="container">
+      <div class="gallery-v3 gallery-home gallery-bento">
         <figure class="gv-tile gv-1 reveal" data-full="images/IMG_4064-1400w.jpg">
           <picture>
             <source type="image/webp" srcset="images/IMG_4064-480w.webp 480w, images/IMG_4064-800w.webp 800w, images/IMG_4064-1400w.webp 1400w" sizes="(max-width: 980px) 100vw, 66vw">

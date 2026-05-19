@@ -13,17 +13,16 @@
   }
 
   /* ----- Mobile nav toggle ----- */
-  const toggle = $(".nav-toggle");
-  const links  = $(".nav-links");
-  if (toggle && links) {
+  const toggle  = $(".nav-toggle");
+  const mobile  = $("#nav-mobile");
+  if (toggle && mobile) {
     toggle.addEventListener("click", () => {
-      const isOpen = links.classList.toggle("is-open");
+      const isOpen = mobile.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(isOpen));
       document.body.style.overflow = isOpen ? "hidden" : "";
     });
-    // Close on link click
-    $$(".nav-links a").forEach(a => a.addEventListener("click", () => {
-      links.classList.remove("is-open");
+    $$("a", mobile).forEach(a => a.addEventListener("click", () => {
+      mobile.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
       document.body.style.overflow = "";
     }));
@@ -69,7 +68,7 @@
     const navigate = (delta) => open((idx + delta + items.length) % items.length);
 
     const wire = () => {
-      items = $$(".gallery-item");
+      items = $$(".gv-tile");
       items.forEach((el, i) => el.addEventListener("click", () => open(i)));
     };
     wire();
